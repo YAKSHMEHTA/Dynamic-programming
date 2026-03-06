@@ -73,13 +73,7 @@ Each folder contains:
    ```
 
 3. **Study the problems progressively** - Start with basic problems before moving to advanced ones
-
-## 💡 Learning Resources
-
-### Recommended Playlists
-- [Aditya Verma's DP Playlist](https://www.youtube.com/playlist?list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go) - Excellent pattern-based approach
-- [Striver's DP Series](https://takeuforward.org/dynamic-programming/striver-dp-series-dynamic-programming-problems/)
-
+4. 
 ### Practice Platforms
 - [LeetCode DP Problems](https://leetcode.com/tag/dynamic-programming/)
 - [Codeforces DP Tags](https://codeforces.com/problemset?tags=dp)
