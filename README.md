@@ -227,8 +227,8 @@ This repository is open source and available for educational purposes.
 ## 📬 Connect
 
 - **GitHub**: [@YAKSHMEHTA](https://github.com/YAKSHMEHTA)
-- **LeetCode**: [Your LeetCode Profile]
-- **LinkedIn**: [Your LinkedIn]
+- **LeetCode**: [https://leetcode.com/u/yaksh_mehta/]
+- **LinkedIn**: [https://www.linkedin.com/in/yaksh-mehta/]
 
 ---
 
