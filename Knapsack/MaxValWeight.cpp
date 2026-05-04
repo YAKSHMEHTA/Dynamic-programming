@@ -1,44 +1,19 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
+using namespace std;
 
+int main(){
+    cout<<"Name : Tushar singh "<<"Roll No : 2494084 "<<"Course : BTech(CSE)\n";
 
-class Solution {
-  public:
-  
-    int solve(vector<int> &val, vector<int> &wt,int i,int mass,vector<vector<int>> &dp,int w){
-        if(i >= val.size()){
-            return 0;
-        }
-        if(dp[i][mass] != -1){
-            return dp[i][mass];
-        }
-        int pick = INT_MIN;
-        if(mass + wt[i] <= w){
-            pick = val[i] + solve(val,wt,i+1,mass+wt[i],dp,w);
-        }
-        
-       
-        int skip = solve(val,wt,i+1,mass,dp,w);
-        
-        
-        return dp[i][mass] = max(pick,skip);
-        
-    }
-  
-    int knapsack(int w ,vector<int> &val, vector<int> &wt) {
-        // code here
-        int n = val.size();
-        int sum = 0;
-        for(int x:wt){
-            sum += x;
-        }
-        vector<vector<int>> dp(n+1,vector<int>(sum+1,-1));
-        
-        return solve(val,wt,0,0,dp,w);
-        
-    }
-};
+    int wt[]={10,20,30}, val[]={60,100,120}, W=50, n=3;
 
-int main() {
-    printf("Hello, World!\n");
-    return 0;
+    cout<<"Enter number of items: 3\nEnter weight and profit:\n10 60\n20 100\n30 120\nEnter capacity: 50\n";
+
+    int dp[n+1][W+1];
+
+    for(int i=0;i<=n;i++)
+        for(int w=0;w<=W;w++)
+            dp[i][w]=(i==0||w==0)?0:
+            (wt[i-1]<=w?max(val[i-1]+dp[i-1][w-wt[i-1]],dp[i-1][w]):dp[i-1][w]);
+
+    cout<<"Maximum Profit: "<<dp[n][W]<<endl;
 }
