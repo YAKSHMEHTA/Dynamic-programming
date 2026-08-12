@@ -33,7 +33,7 @@ int solve(string s,bool t,int idx,int prev,bool lz){
 int main(){
     // hardcoded input
     ll a = 123;
-    ll b = 312;
+    ll b = 321;
     memset(dp,-1,sizeof(dp));
     int cnt = 0;
 
